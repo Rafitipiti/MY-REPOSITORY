@@ -1,11 +1,4 @@
 
-def voltari(arr,a):
-    arv = [[] for i in range (a)]
-    for i in range (0,len(arr)):
-         for j in arr[i]:
-             arv[j].append(i)
-        
-
 def topo(arr, wa, visited, topu):
     visited[wa] = True
     for a in arr[wa]:
@@ -24,7 +17,6 @@ def main():
         y -= 1
         arr[x].append(y)
     topo(arr,0, visited, topu)
-    topu.reverse()
     print(topu)
     
 main()
