@@ -19,12 +19,19 @@ def monedas(d, n):
     S = [0] * (n + 1)
     f(d,n,C,S)
     return C, S
-monto = 19
-c, s = monedas([1, 5, 10, 20, 25, 50], monto)
+
+monto = 20
+c, s = monedas([3, 5, 10, 20, 25, 50], monto)
 print(c)
 print(s)
 contar = [0] * (monto + 1)
-while monto > 0:
+resultado = False
+
+while monto > 0 and s[monto] > 0:
     print(s[monto],monto)
     contar[s[monto]] += 1
     monto -= s[monto]
+    resultado = True
+    
+if(resultado == False):
+    print("Imposible")
