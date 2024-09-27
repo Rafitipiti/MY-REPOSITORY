@@ -9,7 +9,7 @@ nodos = int(input())
 print("Ingrese cantidad de relaciones:")
 relaciones = int(input())
 while(relaciones > (nodos*(nodos-1))//2):
-    print("Seas mamon:")
+    print("naaaaaaaa:")
     relaciones = int(input())
 
 matriz = [[] for i in range(nodos)]
